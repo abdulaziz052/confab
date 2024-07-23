@@ -447,6 +447,15 @@ video {
 .ml-\[74px\]{
   margin-left: 74px;
 }
+.mb-\[32px\]{
+  margin-bottom: 32px;
+}
+.mb-\[16px\]{
+  margin-bottom: 16px;
+}
+.ml-\[32px\]{
+  margin-left: 32px;
+}
 .flex{
   display: flex;
 }
@@ -455,6 +464,27 @@ video {
 }
 .max-w-\[515px\]{
   max-width: 515px;
+}
+.max-w-\[\]{
+  max-width: ;
+}
+.max-w-\[335ppx\]{
+  max-width: 335ppx;
+}
+.max-w-\[335pz\]{
+  max-width: 335pz;
+}
+.max-w-\[335px\]{
+  max-width: 335px;
+}
+.max-w-\[360px\]{
+  max-width: 360px;
+}
+.max-w-\[296px\]{
+  max-width: 296px;
+}
+.items-end{
+  align-items: flex-end;
 }
 .items-center{
   align-items: center;
@@ -471,9 +501,28 @@ video {
 .rounded-full{
   border-radius: 9999px;
 }
+.rounded-\[16px\]{
+  border-radius: 16px;
+}
+.rounded-\[32px\]{
+  border-radius: 32px;
+}
+.rounded-\[\]{
+  border-radius: ;
+}
 .bg-\[\#000000\]{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-cover{
+  background-size: cover;
+}
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
 .px-5{
   padding-left: 1.25rem;
@@ -482,6 +531,14 @@ video {
 .py-\[8px\]{
   padding-top: 8px;
   padding-bottom: 8px;
+}
+.py-\[32px\]{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.px-\[32px\]{
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .pb-\[25px\]{
   padding-bottom: 25px;
@@ -495,6 +552,9 @@ video {
 .pt-\[32px\]{
   padding-top: 32px;
 }
+.pt-\[104px\]{
+  padding-top: 104px;
+}
 .font-\[Koulen\]{
   font-family: Koulen;
 }
@@ -504,6 +564,9 @@ video {
 .font-sans{
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+.font-\[\]{
+  font-family: ;
+}
 .text-\[16px\]{
   font-size: 16px;
 }
@@ -512,6 +575,15 @@ video {
 }
 .text-\[96px\]{
   font-size: 96px;
+}
+.text-\[40px\]{
+  font-size: 40px;
+}
+.text-\[20px\]{
+  font-size: 20px;
+}
+.text-\[14px\]{
+  font-size: 14px;
 }
 .font-medium{
   font-weight: 500;
@@ -531,6 +603,12 @@ video {
 .leading-\[86\.4px\]{
   line-height: 86.4px;
 }
+.leading-\[42px\]{
+  line-height: 42px;
+}
+.leading-\[18px\]{
+  line-height: 18px;
+}
 .text-\[\#000000\]{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -546,6 +624,14 @@ video {
 .text-\[\#FFFFFF\]{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-\[\#FB554C\]{
+  --tw-text-opacity: 1;
+  color: rgb(251 85 76 / var(--tw-text-opacity));
+}
+.text-\[\#323334\]{
+  --tw-text-opacity: 1;
+  color: rgb(50 51 52 / var(--tw-text-opacity));
 }
 
 
