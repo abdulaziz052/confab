@@ -434,8 +434,56 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+.absolute{
+  position: absolute;
+}
 .relative{
   position: relative;
+}
+.left-\[30pc\]{
+  left: 30pc;
+}
+.left-\[30px\]{
+  left: 30px;
+}
+.left-\[80px\]{
+  left: 80px;
+}
+.left-\[100px\]{
+  left: 100px;
+}
+.left-\[500px\]{
+  left: 500px;
+}
+.left-\[800px\]{
+  left: 800px;
+}
+.left-\[840px\]{
+  left: 840px;
+}
+.top-0{
+  top: 0px;
+}
+.left-\[0px\]{
+  left: 0px;
+}
+.left-\[760px\]{
+  left: 760px;
+}
+.left-\[700px\]{
+  left: 700px;
+}
+.left-\[650px\]{
+  left: 650px;
+}
+.top-\[30px\]{
+  top: 30px;
+}
+.top-\[60px\]{
+  top: 60px;
+}
+.top-\[120px\]{
+  top: 120px;
 }
 .mx-auto{
   margin-left: auto;
@@ -453,14 +501,14 @@ video {
 .mb-\[8px\]{
   margin-bottom: 8px;
 }
+.ml-\[16px\]{
+  margin-left: 16px;
+}
 .ml-\[32px\]{
   margin-left: 32px;
 }
 .ml-\[74px\]{
   margin-left: 74px;
-}
-.ml-\[16px\]{
-  margin-left: 16px;
 }
 .flex{
   display: flex;
@@ -468,17 +516,14 @@ video {
 .h-\[180px\]{
   height: 180px;
 }
+.w-\[180px\]{
+  width: 180px;
+}
 .w-\[820px\]{
   width: 820px;
 }
 .w-full{
   width: 100%;
-}
-.w-\[\]{
-  width: ;
-}
-.w-\[180px\]{
-  width: 180px;
 }
 .max-w-\[1280px\]{
   max-width: 1280px;
@@ -495,14 +540,11 @@ video {
 .max-w-\[360px\]{
   max-width: 360px;
 }
-.max-w-\[515px\]{
-  max-width: 515px;
-}
-.max-w-\[\]{
-  max-width: ;
-}
 .max-w-\[396px\]{
   max-width: 396px;
+}
+.max-w-\[515px\]{
+  max-width: 515px;
 }
 .items-end{
   align-items: flex-end;
@@ -516,6 +558,9 @@ video {
 .justify-between{
   justify-content: space-between;
 }
+.gap-\[10px\]{
+  gap: 10px;
+}
 .gap-\[126px\]{
   gap: 126px;
 }
@@ -525,32 +570,14 @@ video {
 .gap-\[8px\]{
   gap: 8px;
 }
-.gap-\[30px\]{
-  gap: 30px;
-}
-.gap-\[10px\]{
-  gap: 10px;
-}
 .rounded-\[32px\]{
   border-radius: 32px;
-}
-.rounded-full{
-  border-radius: 9999px;
-}
-.rounded{
-  border-radius: 0.25rem;
-}
-.rounded-\[50\%\]{
-  border-radius: 50%;
 }
 .rounded-\[99px\]{
   border-radius: 99px;
 }
-.rounded-\[999\]{
-  border-radius: 999;
-}
-.rounded-\[999px\]{
-  border-radius: 999px;
+.rounded-full{
+  border-radius: 9999px;
 }
 .bg-\[\#000000\]{
   --tw-bg-opacity: 1;
@@ -560,17 +587,17 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(245 244 243 / var(--tw-bg-opacity));
 }
-.bg-white{
+.bg-\[\#FB554C\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(251 85 76 / var(--tw-bg-opacity));
 }
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
-.bg-\[\#FB554C\]{
+.bg-white{
   --tw-bg-opacity: 1;
-  background-color: rgb(251 85 76 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 .bg-cover{
   background-size: cover;
@@ -581,6 +608,10 @@ video {
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+.px-\[12px\]{
+  padding-left: 12px;
+  padding-right: 12px;
 }
 .px-\[24px\]{
   padding-left: 24px;
@@ -601,22 +632,6 @@ video {
 .py-\[8px\]{
   padding-top: 8px;
   padding-bottom: 8px;
-}
-.px-\[\]{
-  padding-left: ;
-  padding-right: ;
-}
-.px-\[8px\]{
-  padding-left: 8px;
-  padding-right: 8px;
-}
-.px-\[10px\]{
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.px-\[12px\]{
-  padding-left: 12px;
-  padding-right: 12px;
 }
 .pb-\[25px\]{
   padding-bottom: 25px;
@@ -645,11 +660,11 @@ video {
 .pt-\[64px\]{
   padding-top: 64px;
 }
+.pt-\[70px\]{
+  padding-top: 70px;
+}
 .pt-\[80px\]{
   padding-top: 80px;
-}
-.pt-\[60px\]{
-  padding-top: 60px;
 }
 .text-center{
   text-align: center;
@@ -663,12 +678,6 @@ video {
 .font-sans{
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.font-\[\]{
-  font-family: ;
-}
-.font-\[Foulen\]{
-  font-family: Foulen;
-}
 .text-\[14px\]{
   font-size: 14px;
 }
@@ -681,14 +690,14 @@ video {
 .text-\[24px\]{
   font-size: 24px;
 }
+.text-\[32px\]{
+  font-size: 32px;
+}
 .text-\[40px\]{
   font-size: 40px;
 }
 .text-\[96px\]{
   font-size: 96px;
-}
-.text-\[32px\]{
-  font-size: 32px;
 }
 .font-medium{
   font-weight: 500;
@@ -711,17 +720,14 @@ video {
 .leading-\[24px\]{
   line-height: 24px;
 }
+.leading-\[32px\]{
+  line-height: 32px;
+}
 .leading-\[42px\]{
   line-height: 42px;
 }
 .leading-\[86\.4px\]{
   line-height: 86.4px;
-}
-.leading-\[\]{
-  line-height: ;
-}
-.leading-\[32px\]{
-  line-height: 32px;
 }
 .text-\[\#000000\]{
   --tw-text-opacity: 1;
