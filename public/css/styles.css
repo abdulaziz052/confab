@@ -540,6 +540,9 @@ video {
 .max-w-\[360px\]{
   max-width: 360px;
 }
+.max-w-\[387px\]{
+  max-width: 387px;
+}
 .max-w-\[396px\]{
   max-width: 396px;
 }
@@ -823,7 +826,31 @@ video {
 body{
     font-family: Koulen , sans-serif,;
 }
+marquee:hover{
+    animation-play-state: paused;
+}
+marquee{
+    animation: var(direction) var(marquee-speed) linear infinite;
+}
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
 
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
 
 .hover\:bg-\[\#F6F5F4\]:hover{
   --tw-bg-opacity: 1;
