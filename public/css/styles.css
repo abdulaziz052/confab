@@ -462,6 +462,9 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.mb-\[146px\]{
+  margin-bottom: 146px;
+}
 .mb-\[16px\]{
   margin-bottom: 16px;
 }
@@ -480,6 +483,9 @@ video {
 .mb-\[8px\]{
   margin-bottom: 8px;
 }
+.ml-\[150px\]{
+  margin-left: 150px;
+}
 .ml-\[16px\]{
   margin-left: 16px;
 }
@@ -495,14 +501,8 @@ video {
 .mr-\[24px\]{
   margin-right: 24px;
 }
-.mb-\[\]{
-  margin-bottom: ;
-}
-.mb-\[146px\]{
-  margin-bottom: 146px;
-}
-.ml-\[150px\]{
-  margin-left: 150px;
+.block{
+  display: block;
 }
 .flex{
   display: flex;
@@ -530,6 +530,9 @@ video {
 }
 .max-w-\[1280px\]{
   max-width: 1280px;
+}
+.max-w-\[226px\]{
+  max-width: 226px;
 }
 .max-w-\[296px\]{
   max-width: 296px;
@@ -563,12 +566,6 @@ video {
 }
 .max-w-\[515px\]{
   max-width: 515px;
-}
-.max-w-\[\]{
-  max-width: ;
-}
-.max-w-\[226px\]{
-  max-width: 226px;
 }
 .items-end{
   align-items: flex-end;
@@ -618,17 +615,11 @@ video {
 .rounded-full{
   border-radius: 9999px;
 }
-.rounded{
-  border-radius: 0.25rem;
-}
-.rounded-\[\]{
-  border-radius: ;
+.border-2{
+  border-width: 2px;
 }
 .border-\[1px\]{
   border-width: 1px;
-}
-.border-2{
-  border-width: 2px;
 }
 .border-\[4px\]{
   border-width: 4px;
@@ -636,9 +627,6 @@ video {
 .border-\[\#000000\]{
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-.border-\[\]{
-  border-color: ;
 }
 .bg-\[\#000000\]{
   --tw-bg-opacity: 1;
@@ -723,6 +711,9 @@ video {
 .pb-\[64px\]{
   padding-bottom: 64px;
 }
+.pl-\[150px\]{
+  padding-left: 150px;
+}
 .pl-\[16px\]{
   padding-left: 16px;
 }
@@ -761,9 +752,6 @@ video {
 }
 .font-sans{
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-.font-\[\]{
-  font-family: ;
 }
 .text-\[12px\]{
   font-size: 12px;
@@ -854,6 +842,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
 
 
 body{
@@ -888,4 +880,14 @@ marquee{
 .hover\:bg-\[\#F6F5F4\]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(246 245 244 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-black:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }

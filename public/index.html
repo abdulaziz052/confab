@@ -6,9 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
+<style>
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
 
+    body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper {
+        width: 1000px;
+        height: 100%;
+    }
+
+
+
+    .swiper-slide img {
+        display: block;
+        object-fit: cover;
+    }
+</style>
 
 <body>
     <!-- header start -->
@@ -420,44 +447,225 @@
     <section class="py-[80px]">
         <div class="max-w-[1280px] mx-auto px-5">
             <div class="mb-[48px] flex items-end justify-between">
-               <div>
-                <h2 class="leading-[86.4px] font-[Koulen] font-normal text-[96px] text-[#000000] max-w-[387px]">upcoming
-                    <span class="text-[#8DBAB5]">events</span></h2>
-               </div>
-               <div>
-                <button class="font-semibold text-[16px]  flex items-center gap-[8px] py-[8px] px-[24px] border-2 border-[#000000] rounded-full">
-                    <img src="./img/remove_red_eye.svg" alt="">
-                    View all
-                </button>
-               </div>
+                <div>
+                    <h2 class="leading-[86.4px] font-[Koulen] font-normal text-[96px] text-[#000000] max-w-[387px]">
+                        upcoming
+                        <span class="text-[#8DBAB5]">events</span>
+                    </h2>
+                </div>
+                <div class="flex gap-[24px] items-center">
+                    <button
+                        class="font-semibold text-[16px]  flex items-center gap-[8px] py-[8px] px-[24px] border-2 border-[#000000] rounded-full">
+                        <img src="./img/remove_red_eye.svg" alt="">
+                        View all
+                    </button>
+                    <div class="swiper-button-prev1 py-[16px] px-[16px] group rounded-full hover:bg-black bg-white">
+                        <svg class="group-hover:text-white" width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 8.94005C19.48 8.42005 18.64 8.42005 18.12 8.94005L12 15.06C11.48 15.58 11.48 16.42 12 16.94L18.12 23.06C18.64 23.58 19.48 23.58 20 23.06C20.52 22.54 20.52 21.7 20 21.18L14.8267 15.9934L20 10.82C20.52 10.3 20.5067 9.44672 20 8.94005Z" fill="currentColor"/>
+                            </svg>
+                            
+                    </div>
+                    <div class="swiper-button-next1 group py-[16px] px-[16px] rounded-full bg-white hover:bg-black">
+                        <svg  class="group-hover:text-white" width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 8.94759C11.48 9.46759 11.48 10.3076 12 10.8276L17.1733 16.0009L12 21.1743C11.48 21.6943 11.48 22.5343 12 23.0543C12.52 23.5743 13.36 23.5743 13.88 23.0543L20 16.9343C20.52 16.4143 20.52 15.5743 20 15.0543L13.88 8.93426C13.3733 8.42759 12.52 8.42759 12 8.94759Z" fill="currentColor"/>
+                            </svg>
+                            
+                    </div>
+                </div>
             </div>
             <div class="flex items-end">
-                <p class="max-w-[226px] font-medium text-[14px] text-[#4E4F51] leading-[24px]">Virtual meetings, and conferences, anyone can share, join or host (virtual events).</p>
-                <div class="ml-[150px] py-[32px] px-[32px] max-w-[400px] w-full bg-[#F5F4F3] border-[4px] border-[#000000] rounded-[32px]">
-                 <div class="mb-[146px]">
-                    <h2 class="font-[Koulen] font-normal text-[40px] max-w-[336px] leading-[42px]">make a 3d motion graphic looks
-                        mesmerizing</h2>
-                        <span class="font-[Koulen] text-[20px] text-[#FB554C]">thu, 19 may 2022</span>
-                 </div>
-                 <div>
-                    <div class="mb-[16px]">
-                        <img src="./img/human-with-beard.svg" alt="">
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <h5 class="font-[Koulen] font-normal text-[20px] ">jerry</h5>
-                            <span class="font-medium text-[14px] text-[#4E4F51]">3D Motion Graphics</span>
+                <div>
+                    <p class="max-w-[226px] font-medium text-[14px] text-[#4E4F51] leading-[24px]">Virtual
+                        meetings, and conferences, anyone can share, join or host (virtual events).</p>
+                </div>
+                <div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="flex items-end">
+                                    <div
+                                        class=" py-[32px] px-[32px] max-w-[400px] w-full bg-[#F5F4F3] border-[4px] border-[#000000] rounded-[32px]">
+                                        <div class="mb-[146px]">
+                                            <h2
+                                                class="font-[Koulen] font-normal text-[40px] max-w-[336px] leading-[42px]">
+                                                make a 3d motion graphic looks
+                                                mesmerizing</h2>
+                                            <span class="font-[Koulen] text-[20px] text-[#FB554C]">thu, 19 may
+                                                2022</span>
+                                        </div>
+                                        <div>
+                                            <div class="mb-[16px]">
+                                                <img src="./img/human-with-beard.svg" alt="">
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <div>
+                                                    <h5 class="font-[Koulen] font-normal text-[20px] ">jerry</h5>
+                                                    <span class="font-medium text-[14px] text-[#4E4F51]">3D Motion
+                                                        Graphics</span>
+                                                </div>
+                                                <div>
+                                                    <img src="./img/arrow-right1.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex items-end">
+                                    <div
+                                        class=" py-[32px] px-[32px] max-w-[400px] w-full bg-[#F5F4F3] border-[4px] border-[#000000] rounded-[32px]">
+                                        <div class="mb-[146px]">
+                                            <h2
+                                                class="font-[Koulen] font-normal text-[40px] max-w-[336px] leading-[42px]">
+                                                make a 3d motion graphic looks
+                                                mesmerizing</h2>
+                                            <span class="font-[Koulen] text-[20px] text-[#FB554C]">thu, 19 may
+                                                2022</span>
+                                        </div>
+                                        <div>
+                                            <div class="mb-[16px]">
+                                                <img src="./img/human-with-beard.svg" alt="">
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <div>
+                                                    <h5 class="font-[Koulen] font-normal text-[20px] ">jerry</h5>
+                                                    <span class="font-medium text-[14px] text-[#4E4F51]">3D Motion
+                                                        Graphics</span>
+                                                </div>
+                                                <div>
+                                                    <img src="./img/arrow-right1.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex items-end">
+                                    <div
+                                        class=" py-[32px] px-[32px] max-w-[400px] w-full bg-[#F5F4F3] border-[4px] border-[#000000] rounded-[32px]">
+                                        <div class="mb-[146px]">
+                                            <h2
+                                                class="font-[Koulen] font-normal text-[40px] max-w-[336px] leading-[42px]">
+                                                make a 3d motion graphic looks
+                                                mesmerizing</h2>
+                                            <span class="font-[Koulen] text-[20px] text-[#FB554C]">thu, 19 may
+                                                2022</span>
+                                        </div>
+                                        <div>
+                                            <div class="mb-[16px]">
+                                                <img src="./img/human-with-beard.svg" alt="">
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <div>
+                                                    <h5 class="font-[Koulen] font-normal text-[20px] ">jerry</h5>
+                                                    <span class="font-medium text-[14px] text-[#4E4F51]">3D Motion
+                                                        Graphics</span>
+                                                </div>
+                                                <div>
+                                                    <img src="./img/arrow-right1.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex items-end">
+                                    <div
+                                        class=" py-[32px] px-[32px] max-w-[400px] w-full bg-[#F5F4F3] border-[4px] border-[#000000] rounded-[32px]">
+                                        <div class="mb-[146px]">
+                                            <h2
+                                                class="font-[Koulen] font-normal text-[40px] max-w-[336px] leading-[42px]">
+                                                make a 3d motion graphic looks
+                                                mesmerizing</h2>
+                                            <span class="font-[Koulen] text-[20px] text-[#FB554C]">thu, 19 may
+                                                2022</span>
+                                        </div>
+                                        <div>
+                                            <div class="mb-[16px]">
+                                                <img src="./img/human-with-beard.svg" alt="">
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <div>
+                                                    <h5 class="font-[Koulen] font-normal text-[20px] ">jerry</h5>
+                                                    <span class="font-medium text-[14px] text-[#4E4F51]">3D Motion
+                                                        Graphics</span>
+                                                </div>
+                                                <div>
+                                                    <img src="./img/arrow-right1.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex items-end">
+                                    <div
+                                        class=" py-[32px] px-[32px] max-w-[400px] w-full bg-[#F5F4F3] border-[4px] border-[#000000] rounded-[32px]">
+                                        <div class="mb-[146px]">
+                                            <h2
+                                                class="font-[Koulen] font-normal text-[40px] max-w-[336px] leading-[42px]">
+                                                make a 3d motion graphic looks
+                                                mesmerizing</h2>
+                                            <span class="font-[Koulen] text-[20px] text-[#FB554C]">thu, 19 may
+                                                2022</span>
+                                        </div>
+                                        <div>
+                                            <div class="mb-[16px]">
+                                                <img src="./img/human-with-beard.svg" alt="">
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <div>
+                                                    <h5 class="font-[Koulen] font-normal text-[20px] ">jerry</h5>
+                                                    <span class="font-medium text-[14px] text-[#4E4F51]">3D Motion
+                                                        Graphics</span>
+                                                </div>
+                                                <div>
+                                                    <img src="./img/arrow-right1.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <img src="./img/arrow-right1.svg" alt="">
-                        </div>
                     </div>
-                 </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- swiper end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            centeredSlides: true,
+            spaceBetween: 0,
+            navigation: {
+                nextEl: ".swiper-button-next1",
+                prevEl: ".swiper-button-prev1",
+            },
+        });
+    </script>
 </body>
 
 </html>
