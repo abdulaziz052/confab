@@ -434,6 +434,34 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+.container{
+  width: 100%;
+}
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
 .absolute{
   position: absolute;
 }
@@ -462,11 +490,17 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.mb-\[120px\]{
+  margin-bottom: 120px;
+}
 .mb-\[146px\]{
   margin-bottom: 146px;
 }
 .mb-\[16px\]{
   margin-bottom: 16px;
+}
+.mb-\[24px\]{
+  margin-bottom: 24px;
 }
 .mb-\[32px\]{
   margin-bottom: 32px;
@@ -482,9 +516,6 @@ video {
 }
 .mb-\[8px\]{
   margin-bottom: 8px;
-}
-.ml-\[150px\]{
-  margin-left: 150px;
 }
 .ml-\[16px\]{
   margin-left: 16px;
@@ -534,6 +565,9 @@ video {
 .max-w-\[226px\]{
   max-width: 226px;
 }
+.max-w-\[290px\]{
+  max-width: 290px;
+}
 .max-w-\[296px\]{
   max-width: 296px;
 }
@@ -555,6 +589,9 @@ video {
 .max-w-\[387px\]{
   max-width: 387px;
 }
+.max-w-\[390px\]{
+  max-width: 390px;
+}
 .max-w-\[396px\]{
   max-width: 396px;
 }
@@ -564,8 +601,26 @@ video {
 .max-w-\[400px\]{
   max-width: 400px;
 }
+.max-w-\[420px\]{
+  max-width: 420px;
+}
+.max-w-\[450px\]{
+  max-width: 450px;
+}
 .max-w-\[515px\]{
   max-width: 515px;
+}
+.max-w-\[524px\]{
+  max-width: 524px;
+}
+.max-w-\[556px\]{
+  max-width: 556px;
+}
+.max-w-\[560px\]{
+  max-width: 560px;
+}
+.max-w-\[580px\]{
+  max-width: 580px;
 }
 .items-end{
   align-items: flex-end;
@@ -621,12 +676,19 @@ video {
 .border-\[1px\]{
   border-width: 1px;
 }
+.border-\[2px\]{
+  border-width: 2px;
+}
 .border-\[4px\]{
   border-width: 4px;
 }
 .border-\[\#000000\]{
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+.border-\[\#4E4F51\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(78 79 81 / var(--tw-border-opacity));
 }
 .bg-\[\#000000\]{
   --tw-bg-opacity: 1;
@@ -643,6 +705,9 @@ video {
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+.bg-inherit{
+  background-color: inherit;
 }
 .bg-white{
   --tw-bg-opacity: 1;
@@ -705,17 +770,20 @@ video {
 .pb-\[25px\]{
   padding-bottom: 25px;
 }
+.pb-\[48px\]{
+  padding-bottom: 48px;
+}
 .pb-\[56px\]{
   padding-bottom: 56px;
 }
 .pb-\[64px\]{
   padding-bottom: 64px;
 }
-.pl-\[150px\]{
-  padding-left: 150px;
-}
 .pl-\[16px\]{
   padding-left: 16px;
+}
+.pl-\[32px\]{
+  padding-left: 32px;
 }
 .pl-\[48px\]{
   padding-left: 48px;
@@ -726,8 +794,14 @@ video {
 .pr-\[32px\]{
   padding-right: 32px;
 }
+.pr-\[372px\]{
+  padding-right: 372px;
+}
 .pt-\[104px\]{
   padding-top: 104px;
+}
+.pt-\[24px\]{
+  padding-top: 24px;
 }
 .pt-\[32px\]{
   padding-top: 32px;
@@ -777,6 +851,9 @@ video {
 .text-\[40px\]{
   font-size: 40px;
 }
+.text-\[64px\]{
+  font-size: 64px;
+}
 .text-\[96px\]{
   font-size: 96px;
 }
@@ -806,6 +883,9 @@ video {
 }
 .leading-\[42px\]{
   line-height: 42px;
+}
+.leading-\[60px\]{
+  line-height: 60px;
 }
 .leading-\[86\.4px\]{
   line-height: 86.4px;
@@ -838,13 +918,17 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.text-black{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 
@@ -876,18 +960,89 @@ marquee{
         transform: translateX(0%);
     }
 }
-
-.hover\:bg-\[\#F6F5F4\]:hover{
+.container {
+    max-width: 180px;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container input ~ .checkmark {
+    background-color: #bebebe;
+    border-radius: 8px;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #323334;
+    border-radius: 8px;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 10px;
+    top: 7px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-radius: 100px;
+    border-width: 0 2px 2px 0;
+    transform: rotate(50deg);
+  }
+  .hover\:bg-\[\#F6F5F4\]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(246 245 244 / var(--tw-bg-opacity));
 }
-
-.hover\:bg-black:hover{
+  .hover\:bg-black:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
-
-.group:hover .group-hover\:text-white{
+  .hover\:bg-white:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+  .hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+  .group:hover .group-hover\:text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
